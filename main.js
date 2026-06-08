@@ -47,45 +47,45 @@ const observer = new IntersectionObserver((entries) => {
 revealEls.forEach(el => observer.observe(el));
 
 // ── CONTACT FORM ──
-const form = document.getElementById('contactForm');
+// const form = document.getElementById('contactForm');
 
-console.log("FORM FOUND:", form);
+// console.log("FORM FOUND:", form);
 
-if (form) {
-  form.addEventListener('submit', async (e) => {
-    console.log("SUBMIT FIRED");
+// if (form) {
+//   form.addEventListener('submit', async (e) => {
+//     console.log("SUBMIT FIRED");
 
-    e.preventDefault();
+//     e.preventDefault();
 
-    const btn = form.querySelector('button[type="submit"]');
+//     const btn = form.querySelector('button[type="submit"]');
 
-    console.log("BUTTON:", btn);
+//     console.log("BUTTON:", btn);
 
-    btn.disabled = true;
-    btn.textContent = 'Sending...';
+//     btn.disabled = true;
+//     btn.textContent = 'Sending...';
 
-    try {
-      console.log("FETCHING:", form.action);
+//     try {
+//       console.log("FETCHING:", form.action);
 
-      const response = await fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form)
-      });
+//       const response = await fetch(form.action, {
+//         method: 'POST',
+//         body: new FormData(form)
+//       });
 
-      console.log("STATUS:", response.status);
+//       console.log("STATUS:", response.status);
 
-      if (response.ok) {
-        btn.textContent = 'Message sent ✓';
-        form.reset();
-      } else {
-        btn.textContent = 'Failed to send';
-      }
-    } catch (error) {
-      console.error(error);
-      btn.textContent = 'Error';
-    }
-  });
-}
+//       if (response.ok) {
+//         btn.textContent = 'Message sent ✓';
+//         form.reset();
+//       } else {
+//         btn.textContent = 'Failed to send';
+//       }
+//     } catch (error) {
+//       console.error(error);
+//       btn.textContent = 'Error';
+//     }
+//   });
+// }
 
 // ── SMOOTH ANCHOR OFFSET (for fixed nav) ──
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
