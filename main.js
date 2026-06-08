@@ -49,20 +49,30 @@ revealEls.forEach(el => observer.observe(el));
 // ── CONTACT FORM ──
 const form = document.getElementById('contactForm');
 
+console.log("FORM FOUND:", form);
+
 if (form) {
   form.addEventListener('submit', async (e) => {
+    console.log("SUBMIT FIRED");
+
     e.preventDefault();
 
     const btn = form.querySelector('button[type="submit"]');
+
+    console.log("BUTTON:", btn);
 
     btn.disabled = true;
     btn.textContent = 'Sending...';
 
     try {
+      console.log("FETCHING:", form.action);
+
       const response = await fetch(form.action, {
         method: 'POST',
         body: new FormData(form)
       });
+
+      console.log("STATUS:", response.status);
 
       if (response.ok) {
         btn.textContent = 'Message sent ✓';
@@ -71,13 +81,9 @@ if (form) {
         btn.textContent = 'Failed to send';
       }
     } catch (error) {
+      console.error(error);
       btn.textContent = 'Error';
     }
-
-    setTimeout(() => {
-      btn.disabled = false;
-      btn.textContent = 'Send Inquiry →';
-    }, 3000);
   });
 }
 
