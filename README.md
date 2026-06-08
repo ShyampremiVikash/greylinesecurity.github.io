@@ -1,5 +1,5 @@
 # greylinesecurity.github.io
-# Vantage Security — Website
+# GreyLine Security — Website
 
 A clean, professional static website for an infrastructure and application security consultancy.
 
@@ -37,8 +37,8 @@ A clean, professional static website for an infrastructure and application secur
 
 ## Customisation
 
-- **Brand name**: Search for `VANTAGE` / `Vantage Security` in `index.html` and replace
-- **Email**: Change `hello@vantagesec.io` in the contact section
+- **Brand name**: Search for `GreyLine` / `GreyLine Security` in `index.html` and replace
+- **Email**: Change `hello@GreyLinesec.io` in the contact section
 - **Colours**: Edit CSS variables at the top of `style.css` (`:root` block)
 - **Form**: The form currently shows a success state client-side only. Wire it up to Formspree, Netlify Forms, or similar for real submissions.
 
