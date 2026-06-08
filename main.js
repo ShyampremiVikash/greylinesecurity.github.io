@@ -47,19 +47,36 @@ revealEls.forEach(el => observer.observe(el));
 
 // ── CONTACT FORM ──
 const form = document.getElementById('contactForm');
+
 if (form) {
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
+
     const btn = form.querySelector('button[type="submit"]');
-    btn.textContent = 'Message sent ✓';
-    btn.style.background = '#4a7c59';
+
     btn.disabled = true;
+    btn.textContent = 'Sending...';
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form)
+      });
+
+      if (response.ok) {
+        btn.textContent = 'Message sent ✓';
+        form.reset();
+      } else {
+        btn.textContent = 'Failed to send';
+      }
+    } catch (error) {
+      btn.textContent = 'Error';
+    }
+
     setTimeout(() => {
-      btn.textContent = 'Send Inquiry →';
-      btn.style.background = '';
       btn.disabled = false;
-      form.reset();
-    }, 4000);
+      btn.textContent = 'Send Inquiry →';
+    }, 3000);
   });
 }
 
