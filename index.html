@@ -404,39 +404,97 @@
           </div>
         </div>
         <div class="contact__right">
-          <form class="contact-form" id="contactForm" action="https://submit-form.com/v14P0o8Yx" method="POST">
-            <div class="form-row">
-              <div class="form-group">
-                <label class="mono" for="name">Full Name</label>
-                <input type="text" id="name" name="name" placeholder="Jane Smith" required />
-              </div>
-              <div class="form-group">
-                <label class="mono" for="org">Organisation</label>
-                <input type="text" id="org" name="org" placeholder="Acme Corp" />
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="mono" for="email">Work Email</label>
-              <input type="email" id="email" name="email" placeholder="jane@acmecorp.com" required />
-            </div>
-            <div class="form-group">
-              <label class="mono" for="service">Service of Interest</label>
-              <select id="service" name="service">
-                <option value="">— Select a service —</option>
-                <option>Firewall Implementation & Support</option>
-                <option>Web Application Penetration Testing</option>
-                <option>Network Architecture Design</option>
-                <option>Network Security Posture Assessment</option>
-                <option>General Security Consultation</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label class="mono" for="message">Brief Description</label>
-              <textarea id="message" name="message" rows="4" placeholder="Describe your environment or concern..."></textarea>
-            </div>
-            <button type="submit" class="btn btn--primary btn--full">Send Inquiry →</button>
-            <p class="form-note mono">All communications are treated as confidential.</p>
-          </form>
+         <div class="contact__right">
+  <form
+    class="contact-form"
+    id="contactForm"
+    action="https://submit-form.com/v14P0o8Yx"
+    method="POST">
+
+    <!-- Optional redirect after successful submission -->
+    <input
+      type="hidden"
+      name="_redirect"
+      value="https://greylinesecurity.github.io/thank-you.html">
+
+    <!-- Optional email subject -->
+    <input
+      type="hidden"
+      name="_email.subject"
+      value="New Inquiry from GreyLine Security Website">
+
+    <div class="form-row">
+      <div class="form-group">
+        <label class="mono" for="name">Full Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Jane Smith"
+          required>
+      </div>
+
+      <div class="form-group">
+        <label class="mono" for="org">Organisation</label>
+        <input
+          type="text"
+          id="org"
+          name="org"
+          placeholder="Acme Corp">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="mono" for="email">Work Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="jane@acmecorp.com"
+        required>
+    </div>
+
+    <div class="form-group">
+      <label class="mono" for="service">Service of Interest</label>
+      <select id="service" name="service">
+        <option value="">— Select a service —</option>
+        <option value="Firewall Implementation & Support">
+          Firewall Implementation & Support
+        </option>
+        <option value="Web Application Penetration Testing">
+          Web Application Penetration Testing
+        </option>
+        <option value="Network Architecture Design">
+          Network Architecture Design
+        </option>
+        <option value="Network Security Posture Assessment">
+          Network Security Posture Assessment
+        </option>
+        <option value="General Security Consultation">
+          General Security Consultation
+        </option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label class="mono" for="message">Brief Description</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="4"
+        placeholder="Describe your environment or concern..."
+        required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn--primary btn--full">
+      Send Inquiry →
+    </button>
+
+    <p class="form-note mono">
+      All communications are treated as confidential.
+    </p>
+  </form>
+</div>
         </div>
       </div>
     </div>
