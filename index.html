@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vantage Security — Infrastructure & Application Security</title>
+  <meta name="description" content="Enterprise security consulting: firewall implementation, web application penetration testing, network architecture, and on-premise network security posture." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══ NAVIGATION ═══ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <span class="logo-mark">▲</span>
+        <span class="logo-text">VANTAGE<span class="logo-sub">SEC</span></span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="nav__cta">Get Assessment</a></li>
+      </ul>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <ul>
+        <li><a href="#services" class="mobile-link">Services</a></li>
+        <li><a href="#approach" class="mobile-link">Approach</a></li>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#contact" class="mobile-link">Get Assessment</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="hero">
+    <div class="hero__grid-overlay"></div>
+    <div class="hero__inner">
+      <div class="hero__tag">
+        <span class="tag-dot"></span>
+        <span class="mono">SECURITY POSTURE ADVISORY</span>
+      </div>
+      <h1 class="hero__heading">
+        Know Where<br/>
+        <em>You're Exposed.</em><br/>
+        <span class="heading-accent">Before They Do.</span>
+      </h1>
+      <p class="hero__sub">
+        We design, harden, and pressure-test enterprise infrastructure — combining defensive architecture with real-world offensive techniques to close the gaps that matter.
+      </p>
+      <div class="hero__actions">
+        <a href="#services" class="btn btn--primary">Our Services</a>
+        <a href="#contact" class="btn btn--ghost">Request a Call</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat">
+          <span class="stat__num">100%</span>
+          <span class="stat__label mono">On-premise focused</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat__num">4</span>
+          <span class="stat__label mono">Core disciplines</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat__num">OWASP</span>
+          <span class="stat__label mono">Aligned methodology</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <div class="terminal-card">
+        <div class="terminal-header">
+          <span class="t-dot t-dot--r"></span>
+          <span class="t-dot t-dot--y"></span>
+          <span class="t-dot t-dot--g"></span>
+          <span class="t-title mono">recon.sh</span>
+        </div>
+        <div class="terminal-body" id="terminalBody">
+          <div class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">./assess --target perimeter</span></div>
+          <div class="t-line t-out">[*] Initiating surface scan...</div>
+          <div class="t-line t-out">[*] Mapping attack vectors</div>
+          <div class="t-line t-warn">[!] Exposed service: 8080/tcp</div>
+          <div class="t-line t-warn">[!] ARP table anomaly detected</div>
+          <div class="t-line t-warn">[!] DNS resolver: cache poisoning risk</div>
+          <div class="t-line t-out">[*] WAF rule analysis complete</div>
+          <div class="t-line t-ok">[✓] Report generated → vantage_report.pdf</div>
+          <div class="t-line"><span class="t-prompt">$</span> <span class="t-cursor">▌</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TICKER ═══ -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span>Firewall Architecture</span>
+      <span class="ticker-sep">◆</span>
+      <span>Web App Penetration Testing</span>
+      <span class="ticker-sep">◆</span>
+      <span>Network Security Posture</span>
+      <span class="ticker-sep">◆</span>
+      <span>DNS Threat Mitigation</span>
+      <span class="ticker-sep">◆</span>
+      <span>ARP Spoofing Defense</span>
+      <span class="ticker-sep">◆</span>
+      <span>On-Premise Architecture</span>
+      <span class="ticker-sep">◆</span>
+      <span>OWASP Top 10 Assessment</span>
+      <span class="ticker-sep">◆</span>
+      <span>Firewall Architecture</span>
+      <span class="ticker-sep">◆</span>
+      <span>Web App Penetration Testing</span>
+      <span class="ticker-sep">◆</span>
+      <span>Network Security Posture</span>
+      <span class="ticker-sep">◆</span>
+      <span>DNS Threat Mitigation</span>
+      <span class="ticker-sep">◆</span>
+      <span>ARP Spoofing Defense</span>
+      <span class="ticker-sep">◆</span>
+      <span>On-Premise Architecture</span>
+      <span class="ticker-sep">◆</span>
+      <span>OWASP Top 10 Assessment</span>
+      <span class="ticker-sep">◆</span>
+    </div>
+  </div>
+
+  <!-- ═══ SERVICES ═══ -->
+  <section class="services" id="services">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="mono section-tag">/ 01 — CAPABILITIES</span>
+        <h2 class="section-title">What We Do</h2>
+        <p class="section-desc">Four disciplines. One mission — a security posture that holds under real conditions.</p>
+      </div>
+
+      <div class="services__grid">
+
+        <!-- Card 1 -->
+        <div class="service-card" data-index="01">
+          <div class="service-card__number mono">01</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="8" width="40" height="28" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="4" y1="16" x2="44" y2="16" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="16" y1="8" x2="16" y2="36" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="10" cy="12" r="1.5" fill="currentColor"/>
+              <circle cx="24" cy="26" r="3" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M28 30 L38 38" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="service-card__label mono">DEFENSIVE</div>
+          <h3 class="service-card__title">Firewall Implementation & Support</h3>
+          <p class="service-card__desc">
+            Stateful and next-gen firewall design, rule-set engineering, zone segmentation, and ongoing tuning. We translate your risk appetite into policy that actually enforces it.
+          </p>
+          <ul class="service-card__points">
+            <li>Rule-base audit and remediation</li>
+            <li>DMZ and zone architecture</li>
+            <li>Ongoing policy management</li>
+            <li>NGFW feature enablement</li>
+          </ul>
+          <a href="#contact" class="service-card__link">Engage →</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card service-card--accent" data-index="02">
+          <div class="service-card__number mono">02</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="6" width="36" height="28" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M14 20 Q20 12 24 20 Q28 28 34 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="20" y1="34" x2="20" y2="42" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="28" y1="34" x2="28" y2="42" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="16" y1="42" x2="32" y2="42" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="34" cy="38" r="6" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="38.2" y1="42.2" x2="42" y2="46" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="service-card__label mono">OFFENSIVE</div>
+          <h3 class="service-card__title">Web Application Penetration Testing</h3>
+          <p class="service-card__desc">
+            Manual-led assessments following OWASP Top 10 and beyond. We think like adversaries and document every exploitable path — with remediation guidance that developers can act on.
+          </p>
+          <ul class="service-card__points">
+            <li>Authentication & session attacks</li>
+            <li>SQLi, XSS, IDOR, SSRF testing</li>
+            <li>Business logic exploitation</li>
+            <li>Detailed remediation report</li>
+          </ul>
+          <a href="#contact" class="service-card__link">Engage →</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card" data-index="03">
+          <div class="service-card__number mono">03</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="4" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="8" cy="14" r="3" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="40" cy="14" r="3" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="8" cy="36" r="3" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="40" cy="36" r="3" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="11" y1="14" x2="20" y2="21" stroke="currentColor" stroke-width="1.2"/>
+              <line x1="37" y1="14" x2="28" y2="21" stroke="currentColor" stroke-width="1.2"/>
+              <line x1="11" y1="36" x2="20" y2="27" stroke="currentColor" stroke-width="1.2"/>
+              <line x1="37" y1="36" x2="28" y2="27" stroke="currentColor" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <div class="service-card__label mono">DEFENSIVE</div>
+          <h3 class="service-card__title">Network Architecture Design (On-Premise)</h3>
+          <p class="service-card__desc">
+            Security-first network design for on-premise environments. Proper segmentation, least-privilege routing, and topology that shrinks your blast radius before an incident begins.
+          </p>
+          <ul class="service-card__points">
+            <li>Layer 2/3 topology design</li>
+            <li>VLAN and micro-segmentation</li>
+            <li>Routing & switching policy</li>
+            <li>Documentation & runbooks</li>
+          </ul>
+          <a href="#contact" class="service-card__link">Engage →</a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service-card" data-index="04">
+          <div class="service-card__number mono">04</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <shield-icon/>
+              <path d="M24 4 L40 11 L40 24 C40 33 24 44 24 44 C24 44 8 33 8 24 L8 11 Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <path d="M17 24 L22 29 L31 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="service-card__label mono">DEFENSIVE + OFFENSIVE</div>
+          <h3 class="service-card__title">Network Security Posture Assessment</h3>
+          <p class="service-card__desc">
+            Targeted assessment of on-premise networks against real attack classes — DNS cache poisoning, ARP spoofing, MITM, and lateral movement. We test it, then help you fix it.
+          </p>
+          <ul class="service-card__points">
+            <li>DNS poisoning simulation & defense</li>
+            <li>ARP spoofing detection & mitigation</li>
+            <li>MITM attack surface analysis</li>
+            <li>Prioritized remediation roadmap</li>
+          </ul>
+          <a href="#contact" class="service-card__link">Engage →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ APPROACH ═══ -->
+  <section class="approach" id="approach">
+    <div class="section-inner">
+      <div class="approach__layout">
+        <div class="approach__left">
+          <span class="mono section-tag">/ 02 — METHODOLOGY</span>
+          <h2 class="section-title">How We Work</h2>
+          <p class="section-desc">
+            Security isn't a product you buy. It's a posture you build — iteratively, honestly, and with full visibility into what's working and what isn't.
+          </p>
+          <p class="approach__body">
+            We approach every engagement with the discipline of an engineer and the perspective of an adversary. Our work is rooted in what's real: your actual infrastructure, your actual risk, not generic frameworks applied blindly.
+          </p>
+          <blockquote class="approach__quote">
+            <span class="mono quote-mark">"</span>
+            Offense informs defense. You can't harden what you haven't tried to break.
+          </blockquote>
+        </div>
+        <div class="approach__right">
+          <div class="process-steps">
+            <div class="step">
+              <div class="step__line"></div>
+              <div class="step__marker mono">I</div>
+              <div class="step__content">
+                <h4>Discovery & Scoping</h4>
+                <p>We map your environment, define scope boundaries, and identify the assets most critical to protect.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__line"></div>
+              <div class="step__marker mono">II</div>
+              <div class="step__content">
+                <h4>Threat Modeling</h4>
+                <p>Attacker profiles, likely vectors, and impact analysis — grounded in your actual topology and threat context.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__line"></div>
+              <div class="step__marker mono">III</div>
+              <div class="step__content">
+                <h4>Active Assessment</h4>
+                <p>Hands-on testing and architecture review. Real techniques, controlled environment, honest findings.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__marker mono">IV</div>
+              <div class="step__content">
+                <h4>Report & Remediation</h4>
+                <p>Findings ranked by severity and exploitability. Remediation guidance written for both engineers and stakeholders.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ THREAT HIGHLIGHT ═══ -->
+  <section class="threats">
+    <div class="section-inner">
+      <span class="mono section-tag">/ 03 — THREAT FOCUS</span>
+      <h2 class="section-title">Attack Classes We Counter</h2>
+      <div class="threats__grid">
+        <div class="threat-item">
+          <div class="threat-item__icon mono">DNS</div>
+          <h4>Cache Poisoning</h4>
+          <p>Corrupting resolver caches to redirect traffic to attacker-controlled infrastructure. We test and harden your DNS stack against DNSSEC gaps and resolver misconfigurations.</p>
+        </div>
+        <div class="threat-item">
+          <div class="threat-item__icon mono">ARP</div>
+          <h4>ARP Spoofing</h4>
+          <p>Layer 2 attacks that let adversaries intercept traffic between hosts on your LAN. We identify unprotected segments and deploy dynamic ARP inspection controls.</p>
+        </div>
+        <div class="threat-item">
+          <div class="threat-item__icon mono">WAF</div>
+          <h4>Application Layer Exploits</h4>
+          <p>OWASP Top 10 and business logic attacks targeting web-facing applications. Manual testing surfaces what automated scanners miss.</p>
+        </div>
+        <div class="threat-item">
+          <div class="threat-item__icon mono">FW</div>
+          <h4>Perimeter Weaknesses</h4>
+          <p>Misconfigured firewall rules, implicit permits, and zone policy gaps. We audit your rule-base against your stated risk posture.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section class="about" id="about">
+    <div class="section-inner">
+      <div class="about__layout">
+        <div class="about__badge">
+          <div class="badge-inner">
+            <span class="badge-icon">▲</span>
+            <span class="badge-text mono">VANTAGE SEC</span>
+            <span class="badge-year mono">EST. 2024</span>
+          </div>
+        </div>
+        <div class="about__content">
+          <span class="mono section-tag">/ 04 — ABOUT</span>
+          <h2 class="section-title">Who We Are</h2>
+          <p>
+            Vantage Security is a specialist consultancy focused exclusively on infrastructure and application security for enterprises operating on-premise. We don't offer managed cloud services or generic compliance checkboxes — we work hands-on with your network, your applications, and your team.
+          </p>
+          <p>
+            Our practitioners come from backgrounds in network engineering, red-team operations, and defensive architecture. That dual perspective — knowing both how systems are built and how they're broken — defines everything we deliver.
+          </p>
+          <div class="about__pillars">
+            <div class="pillar">
+              <span class="mono pillar__label">Principle I</span>
+              <span class="pillar__text">Clarity over jargon</span>
+            </div>
+            <div class="pillar">
+              <span class="mono pillar__label">Principle II</span>
+              <span class="pillar__text">Findings that are actionable</span>
+            </div>
+            <div class="pillar">
+              <span class="mono pillar__label">Principle III</span>
+              <span class="pillar__text">No scope creep, ever</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section class="contact" id="contact">
+    <div class="section-inner">
+      <div class="contact__layout">
+        <div class="contact__left">
+          <span class="mono section-tag">/ 05 — CONTACT</span>
+          <h2 class="section-title">Start a Conversation</h2>
+          <p>Tell us what you're protecting. We'll tell you where the gaps are.</p>
+          <div class="contact__info">
+            <div class="contact-item">
+              <span class="mono contact-item__label">Email</span>
+              <a href="mailto:hello@vantagesec.io">hello@vantagesec.io</a>
+            </div>
+            <div class="contact-item">
+              <span class="mono contact-item__label">Response time</span>
+              <span>Within 24 hours</span>
+            </div>
+            <div class="contact-item">
+              <span class="mono contact-item__label">Engagements</span>
+              <span>On-premise, enterprise only</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact__right">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="mono" for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+              </div>
+              <div class="form-group">
+                <label class="mono" for="org">Organisation</label>
+                <input type="text" id="org" name="org" placeholder="Acme Corp" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="mono" for="email">Work Email</label>
+              <input type="email" id="email" name="email" placeholder="jane@acmecorp.com" required />
+            </div>
+            <div class="form-group">
+              <label class="mono" for="service">Service of Interest</label>
+              <select id="service" name="service">
+                <option value="">— Select a service —</option>
+                <option>Firewall Implementation & Support</option>
+                <option>Web Application Penetration Testing</option>
+                <option>Network Architecture Design</option>
+                <option>Network Security Posture Assessment</option>
+                <option>General Security Consultation</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="mono" for="message">Brief Description</label>
+              <textarea id="message" name="message" rows="4" placeholder="Describe your environment or concern..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Send Inquiry →</button>
+            <p class="form-note mono">All communications are treated as confidential.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="logo-mark">▲</span>
+        <span class="logo-text">VANTAGE<span class="logo-sub">SEC</span></span>
+      </div>
+      <p class="footer__tagline mono">Security by design. Verified under pressure.</p>
+      <nav class="footer__nav">
+        <a href="#services">Services</a>
+        <a href="#approach">Approach</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer__copy mono">© 2024 Vantage Security. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
